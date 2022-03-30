@@ -32,26 +32,25 @@
         android:id="@+id/countrycodepicker"
         android:layout_width="match_parent"
         android:layout_height="50dp"
-        app:ccp_areaCodeDetectedCountry="true"
+        android:layout_above="@id/centerhorizontalline"
         android:layout_centerInParent="true"
         android:layout_marginLeft="100dp"
         android:layout_marginRight="100dp"
-        app:ccp_autoDetectCountry="true"
         android:layout_marginBottom="10dp"
-        android:layout_above="@id/centerhorizontalline"
-        ></com.hbb20.CountryCodePicker>
+        app:ccp_areaCodeDetectedCountry="true"
+        app:ccp_autoDetectCountry="true"></com.hbb20.CountryCodePicker>
 
     <EditText
+        android:id="@+id/getphonenumber"
         android:layout_width="match_parent"
         android:layout_height="50dp"
+        android:layout_below="@id/centerhorizontalline"
         android:layout_marginLeft="70dp"
-        android:layout_marginRight="70dp"
-        android:id="@+id/getphonenumber"
-        android:textAlignment="center"
-        android:inputType="number"
-        android:textColor="@color/black"
         android:layout_marginTop="10dp"
-        android:layout_below="@id/centerhorizontalline">
+        android:layout_marginRight="70dp"
+        android:inputType="number"
+        android:textAlignment="center"
+        android:textColor="@color/black">
 
     </EditText>
 
@@ -76,8 +75,8 @@
         android:layout_height="wrap_content"
         android:layout_below="@id/sendotpbutton"
         android:layout_centerHorizontal="true"
-        android:visibility="invisible"
-        android:layout_marginTop="30dp"></ProgressBar>
+        android:layout_marginTop="30dp"
+        android:visibility="visible"></ProgressBar>
 
     <RelativeLayout
         android:layout_width="match_parent"
